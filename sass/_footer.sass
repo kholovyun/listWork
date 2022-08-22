@@ -1,0 +1,71 @@
+footer
+    background-color: #150433
+    padding-top: 1px
+    padding-bottom: 5em
+.footer__row
+    display: flex
+    margin-bottom: 6em
+    margin-top: 6em
+    flex-wrap: wrap
+    +medium_size
+        justify-content: space-around
+    +phone
+        flex-direction: column
+    .footer__col:nth-child(2)
+        margin-left: 10em
+        margin-right: 3em
+    .footer__col:nth-child(3)
+        margin-right: 7em
+    .footer__col:nth-child(4)
+        margin-right: 10em
+    .footer__col
+        display: flex
+        flex-direction: column
+        color: #FCFCFC
+        +medium_size
+            margin: 0 !important
+        +phone
+            width: 100%
+        .footer__subtitle
+            +footer_subtitle_style
+            border-bottom: 1px solid #F61067
+            padding-bottom: 2px
+            margin-bottom: 2em
+        a
+            text-decoration: none
+            +link_style
+        .tel
+            margin-top: 15px
+        h3
+            font-style: normal
+            font-weight: 900
+            font-size: 24px
+            line-height: 43px
+            letter-spacing: 2px
+            color: #FCFCFC
+            font-family: $main_font_family
+        p
+            font-style: normal
+            font-weight: 400
+            font-size: 16.2px
+            line-height: 26px
+            color: #FCFCFC
+            font-family: $main_font_family
+        .social__media
+            display: flex
+            justify-content: space-between
+            +phone
+                margin-left: 3em
+                margin-right: 3em
+.footer__reserve
+    font-family: $main_font_family
+    font-style: normal
+    font-weight: 400
+    font-size: 11.7px
+    line-height: 19px
+    color: #FCFCFC
+    margin-left: 25em
+    +phone
+        margin-left: 3em
+        margin-right: 3em
+

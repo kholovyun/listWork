@@ -1,0 +1,21 @@
+.white__container
+    .subtitle
+        +subtitle
+        margin-top: 10em
+    .container__text
+        +medium_size
+            text-align: center
+            max-width: 100%
+        +paragraph(#30233D)
+        margin-bottom: 70px 
+    .container__list
+        +list_properties
+        margin-bottom: 160px
+        .list__item
+            +list_item_properties(rgba(246, 16, 103, 0.5))
+        .list__item::before
+            +list_item_icon_red  
+        .list__item__title
+            +list_title_properties(#30233D)
+        .list__item__text
+            +list_item_text_properties(#30233D)      

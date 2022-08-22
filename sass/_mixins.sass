@@ -1,0 +1,83 @@
+=subtitle()
+    font-weight: 800
+    font-size: 12.6px
+    line-height: 26px
+    letter-spacing: 6px
+    text-transform: uppercase
+    color: #F61067
+    font-family: $main_font_family
+=paragraph($color)
+    font-weight: 500
+    font-size: 27px
+    line-height: 40px
+    color: $color
+    max-width: 50%
+    font-family: $main_font_family
+
+=list_properties()
+    display: flex
+    list-style: none
+    justify-content: space-between
+    flex-wrap: wrap
+    align-items: flex-start
+    padding-inline-start: 0
+    +medium_size
+        text-align: center
+        max-width: 100%
+        flex-direction: column
+        flex-wrap: nowrap
+=list_item_properties($border-color)
+    border: 1px solid $border-color
+    width: 27%
+    padding: 40px 20px 50px 30px
+    +medium_size
+        width: 100%
+        box-sizing: border-box
+
+=list_item_icon_red
+    content: url('../img/listicon.svg')
+    max-width: 72px
+    max-height: 72px
+=list_title_properties($color)
+    font-weight: 500
+    font-size: 27px
+    line-height: 40px
+    color: $color 
+=list_item_text_properties($color)
+    font-weight: 400
+    font-size: 16.2px
+    line-height: 26px
+    color: $color
+    font-family: $main_font_family
+    max-width: 90%
+    +medium_size
+        max-width: 100%
+    +phone
+        margin: 0  
+=list_item_icon_gray
+    content: url('../img/listIconGray.svg')
+    max-width: 72px
+    max-height: 72px 
+=link_style()
+    font-weight: 700
+    font-size: 12.6px
+    line-height: 28px
+    letter-spacing: 1px
+    color: #FCFCFC
+    font-family: $main_font_family
+=footer_subtitle_style
+    color: #FCFCFC
+    font-style: normal
+    font-weight: 800
+    font-size: 12.6px
+    line-height: 26px
+    letter-spacing: 6px
+    color: #FCFCFC
+    font-family: $main_font_family
+=medium_size
+    @media screen and (max-width: 900px)
+        @content
+=phone 
+    @media screen and (max-width: 400px)
+        @content 
+    
